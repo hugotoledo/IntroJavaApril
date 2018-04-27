@@ -52,5 +52,39 @@ public class Ex1 {
     } else {
       System.out.println("both kinda small.");
     }
+
+    int count = 1;
+    // switch on primitive numbers int or less (not long, not float, double)
+    // switch on String (but only since Java 6)
+    // switch on Enumeration types...
+    switch (count) {
+      case 0: // values must be constants!
+      case 1:
+        System.out.println("You don't have many!");
+        break;
+      default:
+        System.out.println("Some other number");
+        break;
+      case 2:
+        System.out.println("Some");
+        break;
+      case 3:
+        System.out.println("Aha, three is a great number to have");
+        break;
+      case 4:
+        System.out.println("more");
+        break;
+//      case 99: // break on last case or default "recommended"
+    }
+
+    int test = 3;
+    int result;
+    if (test > 2) {
+      result = 99;
+    } else {
+      result = 14;
+    }
+    // OR :)
+    int result2 = (test > 2) ? 99 : 14;
   }
 }
