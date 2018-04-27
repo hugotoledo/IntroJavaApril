@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 public class DateSupport {
+
   public static int getDayOfWeek(int day, int month, int year)
       throws FileNotFoundException {
     if (day < 1 || month < 1 || year < 1 || day > 31 || month > 12) {
@@ -41,5 +42,11 @@ public class DateSupport {
       System.out.println("");
     }
     System.out.println("Program is still running...");
+
+    int todayDay = 27;
+    int todayMonth = 4;
+    int todayYear = 2018;
+
+    int yourBirthdayDay = 12;
   }
 }
